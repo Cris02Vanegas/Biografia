@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #a85a9b, #e2d7d7);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-heard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(to right, #4b0d68, #d0c9d8);
+}
+
+.icono-heard img {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.container-navbar {
+  margin-right: 10px;
+}
+.container-navbar a {
+  font-size: 30px;
+}
+
+.github {
+  color: black;
+}
+
+.spotify {
+  color: green;
+  margin-left: 5px;
+}
+
+.instagram {
+  color: rgb(190, 64, 42);
+  margin-left: 5px;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container-perfil {
+  display: flex;
+  flex-direction: column;
+}
+
+.foto {
+  text-align: center;
+}
+.foto-perfil {
+  width: 50%;
+}
+
+.datos {
+  text-align: center;
+}
+
+.datos h1 {
+  font-size: 22px;
+  color: #4b0d68;
+  margin: 10px 0;
+}
+
+.datos span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.familia {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.title {
+  color: #4b0d68;
+  align-content: center;
+  margin-bottom: 10px;
+}
+.tabla-f,
+.estudios {
+  text-align: center;
+  margin: 10px 10px;
+}
+.tabla1,
+.tabla2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla1 tr,
+th,
+td {
+  border: #4b0d68 solid 2px;
+  padding: 5px;
+}
+
+.foto-familia {
+  text-align: center;
+}
+
+.foto-f {
+  width: 50%;
+}
+
+.foto-f:hover {
+  animation: escalar 2s;
+}
+
+@keyframes escalar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.8);
+  }
+}
+
+.tabla2 td {
+  font-size: 12px;
+}
+
+.container-canciones {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #4b0d68;
+}
+
+.container-canciones h3 {
+  margin: 10px;
+}
+
+.container-canciones .song2 {
+  margin-top: 20px;
+}
+
+.equipos {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.equipos h2 {
+  margin-bottom: 10px;
+  color: #4b0d68;
+}
+.team {
+  display: flex;
+}
+.millos,
+.liverpool {
+  width: 50%;
+  display: inline;
+  padding: 0 5px;
+}
+
+.container-sobreMi {
+  margin-top: 10px;
+}
+
+.contenido h1 {
+  color: #4b0d68;
+  margin: 10px 0;
+  text-align: center;
+}
+
+p {
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  list-style-position: outside;
+  margin: 10px 15px 0 15px;
+}
+
+.location ol {
+  list-style-position: inside;
+}
+
+.suesca,
+.palomino,
+.tota,
+.villa {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid brown;
+}
+
+.palomino,
+.tota,
+.villa {
+  margin-top: 10px;
+}
+
+.map iframe {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.proyectos h3 {
+  text-align: center;
+  color: #4b0d68;
+  margin: 10px;
+}
+
+.bandera {
+  width: 15px;
+}
+
+.iconos {
+  width: 50px;
+}
+
+.bootcamp h3 {
+  text-align: center;
+  color: #4b0d68;
+  margin: 10px;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+  background: linear-gradient(to right, #4b0d68, #d0c9d8);
+  font-weight: 500;
+}
+
+@media (min-width: 481px) {
+  body {
+    background: linear-gradient(to right, #c9ada7, #ced4da);
+  }
+
+  .container-heard,
+  footer {
+    background: linear-gradient(to right, #343a40, #ced4da);
+  }
+}
+
+@media (min-width: 1366px) {
+  body {
+    background: linear-gradient(to right, #536ec7, #ced4da);
+  }
+
+  .container-heard,
+  footer {
+    background: linear-gradient(to right, #343a40, #ced4da);
+  }
+
+  .container-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-perfil {
+    border: 1px solid;
+    width: 40%;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 4px -1px 9px -1px;
+  }
+
+  .datos {
+    font-size: 20px;
+  }
+
+  .familia th,
+  td {
+    font-size: 18px;
+  }
+
+  .estudios td {
+    font-size: 16px;
+  }
+  .container-sobreMi {
+    border: 1px solid;
+    width: 60%;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: -4px -1px 9px -1px;
+    font-size: 23px;
+  }
+
+  .suesca,
+  .palomino,
+  .tota,
+  .villa {
+    margin-left: 10px;
+  }
+
+  .activity {
+    margin-top: 10px;
+  }
+}
